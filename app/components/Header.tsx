@@ -4,7 +4,7 @@ import photoProfil from "../../public/images/Photo_Mathias.webp";
 
 export default function Header() {
   return (
-    <section className="relative bg-slate-950 px-6 py-12 mb-4">
+    <section className="relative bg-slate-950 px-6 py-12">
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="mb-4 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
           <div className="shrink-0">
