@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import photoProfil from "../../public/images/Photo_Mathias.webp";
+
 export default function Header() {
   return (
     <section className="relative bg-slate-950 px-6 py-12 mb-4">
@@ -7,7 +9,7 @@ export default function Header() {
         <div className="mb-4 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
           <div className="shrink-0">
             <Image
-              src="/images/Photo_Mathias.webp"
+              src={photoProfil}
               alt="Photo de profil de Mathias Morel"
               width={170}
               height={170}
