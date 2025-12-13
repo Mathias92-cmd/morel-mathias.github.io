@@ -3,6 +3,7 @@ import ContactBar from "./components/ContactBar";
 import Skills from "./components/Skills";
 import Formation from "./components/Formation";
 import Langage from "./components/Langage";
+import Experience from "./components/Experience";
 
 export default function Page() {
   return (
@@ -12,6 +13,7 @@ export default function Page() {
       <Skills />
       <Formation />
       <Langage />
+      <Experience />
     </main>
   );
 }
