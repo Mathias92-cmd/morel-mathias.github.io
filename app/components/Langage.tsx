@@ -22,12 +22,11 @@ export default function Langage() {
               <h3 className="text-md font-medium text-slate-300 mb-2">
                 {lang.description}
               </h3>
-              <div className="w-full bg-slate-800 rounded-full h-4">
-                <div
-                  className="bg-emerald-400 h-4 rounded-full"
-                  style={{ width: `${lang.level}%` }}
-                ></div>
-              </div>
+              <progress
+                value={lang.level}
+                max="100"
+                className="w-full h-4 rounded-full overflow-hidden [&::-webkit-progress-bar]:bg-slate-800 [&::-webkit-progress-value]:bg-emerald-400 [&::-moz-progress-bar]:bg-emerald-400"
+              />
             </div>
           ))}
         </div>
