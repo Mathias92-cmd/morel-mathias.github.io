@@ -4,6 +4,7 @@ import Skills from "./components/Skills";
 import Formation from "./components/Formation";
 import Langage from "./components/Langage";
 import Experience from "./components/Experience";
+import Project from "./components/Project";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <Formation />
       <Langage />
       <Experience />
+      <Project />
     </main>
   );
 }
