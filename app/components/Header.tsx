@@ -7,18 +7,16 @@ export default function Header() {
     <section className="relative bg-slate-950 px-6 py-12">
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="mb-4 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
-          <div className="shrink-0">
-            <Image
-              src={photoProfil}
-              alt="Photo de profil de Mathias Morel"
-              width={170}
-              height={170}
-              quality={50}
-              sizes="(max-width: 768px) 150px, 170px"
-              className="rounded-full border-4 border-slate-800 shadow-2xl object-cover shrink-0"
-              priority
-            />
-          </div>
+          <Image
+            src={photoProfil}
+            alt="Photo de profil de Mathias Morel"
+            width={170}
+            height={170}
+            quality={50}
+            sizes="(max-width: 768px) 150px, 170px"
+            className="rounded-full border-4 border-slate-800 shadow-2xl object-cover shrink-0"
+            priority
+          />
 
           <div className="text-center md:text-left">
             <h1 className="text-4xl font-extrabold text-white tracking-tight md:text-6xl mb-2">
