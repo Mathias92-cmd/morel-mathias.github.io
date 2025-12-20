@@ -13,6 +13,7 @@ export default function Header() {
               alt="Photo de profil de Mathias Morel"
               width={170}
               height={170}
+              quality={50}
               sizes="(max-width: 768px) 150px, 170px"
               className="rounded-full border-4 border-slate-800 shadow-2xl object-cover shrink-0"
               priority
