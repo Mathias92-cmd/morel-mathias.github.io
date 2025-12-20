@@ -22,7 +22,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="bg-slate-900 py-12 px-4">
+    <section className="bg-slate-900 py-12 px-4 content-auto">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-8 text-white tracking-tight">
           Expériences <span className="text-emerald-400">Professionnelles</span>
