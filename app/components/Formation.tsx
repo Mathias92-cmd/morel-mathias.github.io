@@ -21,11 +21,11 @@ export default function Formation() {
             key={index}
             className="border border-slate-800 rounded-xl p-6 w-full"
           >
-            <h3 className="text-2xl font-semibold mb-2 text-emerald-400">
-              {formation.title}
-            </h3>
-            <h3 className="text-md font-medium text-slate-300">
-              {formation.period}
+            <h3 className="text-xl font-semibold text-emerald-400">
+              {formation.title}{" "}
+              <span className="text-slate-400 text-base font-normal">
+                ({formation.period})
+              </span>
             </h3>
           </div>
         ))}

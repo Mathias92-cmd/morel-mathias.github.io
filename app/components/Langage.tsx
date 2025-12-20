@@ -15,11 +15,11 @@ export default function Langage() {
             key={lang.name}
             className="border border-slate-800 rounded-xl p-6 w-full"
           >
-            <h3 className="text-2xl font-semibold mb-2 text-emerald-400">
-              {lang.name}
-            </h3>
-            <h3 className="text-md font-medium text-slate-300 mb-2">
-              {lang.description}
+            <h3 className="text-xl font-semibold text-emerald-400 mb-2">
+              {lang.name}{" "}
+              <span className="text-slate-400 text-base font-normal">
+                - {lang.description}
+              </span>
             </h3>
             <progress
               value={lang.level}
