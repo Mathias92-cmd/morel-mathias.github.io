@@ -1,21 +1,15 @@
 export default function Skills() {
   const mySkills = [
-    "JavaScript",
     "TypeScript",
     "React",
-    "MongoDB",
     "HTML",
     "CSS",
     "Git",
     "Podman",
-    "Docker",
-    "Next.js",
     "Java/Spring",
     "Python/Flask",
     "PHP/Laravel",
     "PostgreSQL",
-    "CI/CD",
-    "Unity/C#",
   ];
   return (
     <section className="bg-slate-950 py-12 px-4 content-auto">

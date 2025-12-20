@@ -25,32 +25,30 @@ export default function Project() {
 
   return (
     <section className="bg-slate-950 py-12 px-4 content-auto">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-white tracking-tight">
+      <div className="max-w-3xl mx-auto text-center flex flex-col gap-8">
+        <h2 className="text-3xl font-bold text-white tracking-tight">
           Projets <span className="text-emerald-400">Réalisés</span>
         </h2>
-        <div className="flex flex-col gap-6 max-w-3xl mx-auto">
-          {projects.map((project) => (
-            <div
-              key={project.name}
-              className="border border-slate-800 rounded-xl p-6 w-full text-left bg-slate-900/60"
-            >
-              <h3 className="text-2xl font-semibold mb-2 text-emerald-400">
-                {project.name}
-              </h3>
-              <p className="text-slate-200">{project.description}</p>
-              {project.project_link && (
-                <Link
-                  href={project.project_link}
-                  className="text-emerald-400 hover:underline mt-4 inline-block"
-                  target="_blank"
-                >
-                  Voir le projet
-                </Link>
-              )}
-            </div>
-          ))}
-        </div>
+        {projects.map((project) => (
+          <div
+            key={project.name}
+            className="border border-slate-800 rounded-xl p-6 w-full text-left bg-slate-900/60"
+          >
+            <h3 className="text-2xl font-semibold mb-2 text-emerald-400">
+              {project.name}
+            </h3>
+            <p className="text-slate-200">{project.description}</p>
+            {project.project_link && (
+              <Link
+                href={project.project_link}
+                className="text-emerald-400 hover:underline mt-4 inline-block"
+                target="_blank"
+              >
+                Voir le projet
+              </Link>
+            )}
+          </div>
+        ))}
       </div>
     </section>
   );

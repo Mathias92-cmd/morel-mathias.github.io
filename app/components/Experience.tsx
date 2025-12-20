@@ -23,32 +23,28 @@ export default function Experience() {
 
   return (
     <section className="bg-slate-900 py-12 px-4 content-auto">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8 text-white tracking-tight">
+      <div className="max-w-3xl mx-auto text-center flex flex-col gap-8">
+        <h2 className="text-3xl font-bold text-white tracking-tight">
           Expériences <span className="text-emerald-400">Professionnelles</span>
         </h2>
-
-        <div className="flex flex-col gap-6 max-w-3xl mx-auto">
-          {experiences.map((xp) => (
-            <div
-              key={`${xp.summary}-${xp.year}`}
-              className="border border-slate-800 rounded-xl p-6 w-full text-left bg-slate-900/60"
-            >
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
-                <span className="text-emerald-400 font-semibold text-lg">
-                  {xp.summary}
-                </span>
-                <span className="text-slate-400 text-sm">{xp.year}</span>
-              </div>
-
-              <ul className="mt-4 list-disc list-inside space-y-2 text-slate-200">
-                {xp.description.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
+        {experiences.map((xp) => (
+          <div
+            key={`${xp.summary}-${xp.year}`}
+            className="border border-slate-800 rounded-xl p-6 w-full text-left bg-slate-900/60"
+          >
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+              <span className="text-emerald-400 font-semibold text-lg">
+                {xp.summary}
+              </span>
+              <span className="text-slate-400 text-sm">{xp.year}</span>
             </div>
-          ))}
-        </div>
+            <ul className="mt-4 list-disc list-inside space-y-2 text-slate-200">
+              {xp.description.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
