@@ -12,28 +12,36 @@ export default function ContactBar() {
 
   return (
     <div className="flex flex-wrap justify-center gap-6 md:gap-10 px-4 py-8 bg-slate-900 border-t border-slate-800">
-      {infos.map((info) => (
-        <div
-          key={info.text}
-          className="flex items-center gap-2 text-slate-300 hover:text-emerald-400 transition-colors"
-        >
-          <span className="text-2xl">{info.icon}</span>
-          {info.text === "Linkedin" ? (
+      {infos.map((info) => {
+        const itemClass =
+          "flex items-center gap-2 text-slate-300 hover:text-emerald-400 transition-colors";
+
+        if (info.text === "Linkedin" || info.text === "Github") {
+          const url =
+            info.text === "Linkedin"
+              ? "https://www.linkedin.com/in/mathias-morel/"
+              : "https://github.com/Mathias92-cmd";
+
+          return (
             <Link
-              href="https://www.linkedin.com/in/mathias-morel/"
+              key={info.text}
+              href={url}
               target="_blank"
+              className={itemClass}
             >
+              <span className="text-2xl">{info.icon}</span>
               {info.text}
             </Link>
-          ) : info.text === "Github" ? (
-            <Link href="https://github.com/Mathias92-cmd" target="_blank">
-              {info.text}
-            </Link>
-          ) : (
-            <span>{info.text}</span>
-          )}
-        </div>
-      ))}
+          );
+        }
+
+        return (
+          <span key={info.text} className={itemClass}>
+            <span className="text-2xl">{info.icon}</span>
+            {info.text}
+          </span>
+        );
+      })}
     </div>
   );
 }
