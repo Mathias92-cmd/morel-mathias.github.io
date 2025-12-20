@@ -25,10 +25,7 @@ export default function Skills() {
         </h2>
         <ul className="flex flex-wrap justify-center gap-3">
           {mySkills.map((s) => (
-            <li
-              key={s}
-              className="px-5 py-2 rounded-xl border border-slate-800 bg-slate-900/50 text-slate-300 font-medium text-sm md:text-base hover:border-emerald-500/50 hover:text-emerald-400"
-            >
+            <li key={s} className="skill-badge">
               {s}
             </li>
           ))}

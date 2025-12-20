@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(30 41 59);
+  background-color: rgba(15, 23, 42, 0.5);
+  color: rgb(203, 213, 225);
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .skill-badge {
+    font-size: 1rem;
+  }
+}
+
+.skill-badge:hover {
+  border-color: rgba(16, 185, 129, 0.5);
+  color: #34d399;
+}
